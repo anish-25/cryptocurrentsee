@@ -3,6 +3,7 @@
 
 Cryptocurrentsee (crypto-current-see, Seeing the current market values of cryptocurrencies)
 is a website, which can be used to fetch the current market prices of over 13,000+ cryptocurrencies. Also, it shows you the top 7 currencies that are trending in the market for the last 24 hours.
+####visit - https://cryptocurrentsee.netlify.app/
 
 ## FAQ
 
