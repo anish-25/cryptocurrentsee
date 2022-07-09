@@ -1,0 +1,344 @@
+.contactWrapper{
+    display: flex;
+    flex-direction: row;
+    
+}
+.mainText h2{
+    background: linear-gradient(90deg, #FFE2E2 -3.04%, rgba(255, 226, 226, 0.565261) 46.4%, rgba(255, 226, 226, 0) 140.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'Inria Sans';
+font-style: normal;
+font-weight: bolder;
+font-size: 40px;
+line-height: 43px;
+}
+.subText p{
+    
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 100;
+font-size: 18px;
+line-height: 22px;
+
+color: #C6E4EE;
+}
+.mainCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconsCont{
+background: rgba(255,255,255,0.07);;
+height: 40px;
+border-radius: 30px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+.iconsCont img{
+    height: 35px;
+    transition: all .3s ease-in-out;
+   
+}
+
+.form{
+  display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-content:center;
+
+   background: rgba(255,255,255,0.3);
+border-radius: 30px;
+padding: 2rem;
+min-height: 520px;
+border: solid 2px rgb(38, 168, 228);
+
+
+}
+
+.name .label{
+    font-family: 'Inria Sans';
+font-style: italic;
+font-weight: 700;
+font-size: 16px;
+
+line-height: 22px;
+color: #FFFFFF;
+margin-top: 5px;
+}
+.name{
+    display: flex;
+    
+
+}
+.nameForm{
+    min-height: 50px;
+}
+.nameForm input{
+    border: none;
+    border-radius: 25px;
+    padding: 0.3em;
+    padding-left: 1em;
+    outline: none;
+    font-size: medium;
+    margin: 2px;
+    font-family: 'Inria Sans';
+    width: 100%;
+    text-align: center;
+    box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+    -webkit-box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+    -moz-box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+    transition: all .3s ease-in-out;
+
+
+}
+.nameForm :focus{
+    box-shadow: none;
+
+}
+.messageForm{
+    min-height: 200px;
+}
+.messageForm textarea{
+    border: none;
+    border-radius: 25px;
+    padding: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    outline: none;
+    font-size: medium;
+    margin: 2px;
+    font-family: 'Inria Sans';
+  
+    resize: none;
+    min-height: 200px;
+
+    box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+    -webkit-box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+    -moz-box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+    
+}
+.messageForm{
+    transition: all .3s ease-in-out;
+
+
+}
+.messageForm :focus{
+  box-shadow: none;
+  transition: all .3s ease-in-out;
+
+}
+.messageForm ::-webkit-scrollbar{
+ display: none;
+}
+    
+
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.message .label {
+   
+    font-family: 'Inria Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 5px;
+    display: flex;
+justify-content: center;
+
+   
+}
+.submitButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submitButton button{
+    border: none;
+    outline: none;
+    padding: 0.1em 2.3em 0.1em 2.3em ;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
+    background-color: #a11082;
+    box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+    -webkit-box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+    -moz-box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+    
+
+}
+
+.submitButton :focus{
+    background-color: #000000;
+ 
+  outline: none;
+  box-shadow: none;
+  border: none;
+  box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+  -webkit-box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+  -moz-box-shadow: 7px 10px 32px -11px rgba(0,0,0,0.89);
+    
+
+}
+.submitButton button h5{
+    color: rgba(235, 235, 235, 0.877);
+
+font-size: 1rem;
+font-weight: bold;
+margin-top: 2px;
+font-family: 'Inria Sans';
+}
+.textIconCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .mainText{
+    text-align: center;
+  }
+  .nameForm input{
+    font-size: 16px;
+}
+.message .label h4{
+    font-size: 17.5px;
+}
+.name .label h4{
+    font-size: 17.5px;
+
+}
+@media only screen and (max-width: 1455px) {
+    .message .label h4{
+        font-size: 16px;
+    }
+    .name .label h4{
+        font-size: 16px;
+
+    }
+    .nameForm input{
+        font-size: 15px;
+    }
+   
+   
+
+}
+@media only screen and (max-width: 960px) {
+    .message .label h4{
+        font-size: 16px;
+    }
+    .name .label h4{
+        font-size: 16px;
+
+    }
+  
+   
+    .subText p{
+font-size: 16px;
+
+
+    }
+
+
+}
+@media only screen and (max-width: 870px){
+    .message .label h4{
+        font-size: 16px;
+    }
+    .name .label h4{
+        font-size: 16px;
+
+    }
+    .iconsCont img{
+        height: 30px;
+    }
+   
+}
+@media only screen and (max-width: 870px){
+    .iconsCont img{
+        height: 26px;
+    }
+  
+     
+}
+@media only screen and (max-height: 768px){
+    .contactWrapper{
+      zoom: 94% ;
+    }
+    }
+@media only screen and (max-width: 575px){
+    .contactWrapper{
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+  
+  .mainText{
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 675px){
+    .form{
+        padding: 1rem;
+    }
+
+}
+@media only screen and (max-height: 625px){
+    .contactWrapper{
+      margin-top: 45px;
+    }
+  }
+  .statusText{
+      min-height: 40px;
+  }
+  .statusText p{
+        text-align: center;
+        font-size: 15px;
+      
+        font-weight: bold;
+        margin-top: 2px;
+        font-family: 'Inria Sans';
+font-style: italic;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 20px;
+        
+            
+  }
+  .statusText{
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+  .statusText .spinner-border{
+     width: 30px;
+     height: 30px;
+  }
+  @media only screen and (max-height: 887px) {
+.mainText h2{
+    font-size: 30px;
+}
+.subText p{
+    font-size: 15px;
+}
+.iconsCont{
+    height: 37px;
+}
+.messageForm textarea{
+    min-height: 170px;
+}
+
+}

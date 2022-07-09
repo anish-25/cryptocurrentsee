@@ -1,0 +1,36 @@
+
+.mainTextContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ h1.mainText{
+     font-size: 4em;
+     font-weight: 400;
+     background: linear-gradient(90deg, #FFFFFF 41.88%, rgba(255, 255, 255, 0) 111.02%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     text-fill-color: transparent;
+     
+    
+   
+
+ }
+.trendingData{
+    height: auto;
+}
+ @media only screen and (max-width: 949px) {
+  
+    h1.mainText{
+        font-size: 3em;
+        background: linear-gradient(90deg, #FFFFFF 41.88%, rgba(255, 255, 255, 0) 111.02%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+  
+    }

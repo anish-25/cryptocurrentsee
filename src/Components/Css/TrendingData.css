@@ -1,0 +1,160 @@
+.blurText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(0px) saturate(144%);
+    -webkit-backdrop-filter: blur(0px) saturate(144%);
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    margin-top: 3vh;
+    padding: 6px;
+}
+.coin{
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+}
+.coinLogo img{
+    height: 38px;
+    cursor: pointer;
+}
+.coinName{
+    margin-top: 3px;
+    margin-left: 12px;
+}
+.coinName h5{
+  font-size: 18px;
+}
+.getPriceBtn{
+    margin-top: 2px;
+    margin-right: 4vw;
+}
+.getPriceBtn button{
+    height: 35px;
+    width: 90px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    background: rgb(79,79,79);
+background: linear-gradient(90deg, rgba(79,79,79,1) 0%, rgba(0,0,0,1) 100%);
+transition: all .3s ease-in-out;
+}
+.getPriceBtn button:hover{
+    background: rgb(227,37,231);
+background: linear-gradient(90deg, rgba(227,37,231,1) 0%, rgba(117,20,154,1) 100%);
+}
+.getPriceBtn button {
+    height: 35px;
+    width: 90px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(163, 47, 128);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.getPriceBtn button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 15px;
+}
+
+.getPriceBtn button:active {
+    color: #000
+}
+
+.getPriceBtn button:active:after {
+    background: transparent;
+}
+
+.getPriceBtn button:hover:before {
+    opacity: 1;
+}
+
+.getPriceBtn button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(70,70,70);
+    background: linear-gradient(90deg, rgba(70,70,70,1) 0%, rgba(0,0,0,1) 100%);
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.btnText{
+    margin-top: 3px;
+}
+.getPriceBtn h5{
+    font-size: small;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+
+
+@media only screen and (max-width: 991px){
+    .coinLogo img{
+        height: 28px;
+    }
+    .coinName h5{
+        font-size: medium;
+    }
+}
+@media only screen and (max-width: 545px){
+    .coinLogo img{
+        height: 25px;
+    }
+    .coinName h5{
+        font-size: small;
+    }
+    .getPriceBtn button{
+        height: 30px;
+        width: 80px;
+    }
+    .getPriceBtn h5{
+        font-size: 12px;
+    }
+    
+}
+@media only screen and (max-width: 326px){
+    .coinLogo img{
+        height: 22px;
+    }
+    .coinName h5{
+        font-size: 12px;
+    }
+    .getPriceBtn button{
+        height: 27px;
+        width: 76px;
+    }
+    .getPriceBtn h5{
+        font-size: 10px;
+    }
+    
+}
